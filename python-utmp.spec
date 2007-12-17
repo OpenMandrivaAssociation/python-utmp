@@ -5,7 +5,6 @@ Release: %mkrel 7
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: python-devel
 
 %description
