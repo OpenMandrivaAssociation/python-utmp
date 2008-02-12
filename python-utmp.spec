@@ -9,7 +9,6 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: python-devel
 
 %description
-
 This package provides 3 python modules to access utmp and wtmp
 records.  utmpaccess is lowlevel module wrapping glibc functions,
 UTMPCONST provides useful constants, and utmp is module build on top
