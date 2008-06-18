@@ -1,7 +1,7 @@
 Summary: A python module for working with utmp
 Name: python-utmp
 Version: 0.7
-Release: %mkrel 7
+Release: %mkrel 8
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Python
