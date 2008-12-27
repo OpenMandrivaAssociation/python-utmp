@@ -1,12 +1,12 @@
 Summary: A python module for working with utmp
 Name: python-utmp
 Version: 0.7
-Release: %mkrel 8
+Release: %mkrel 9
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: python-devel
+%py_requires -d
 
 %description
 This package provides 3 python modules to access utmp and wtmp
@@ -18,11 +18,11 @@ of utmpaccess module, providing object oriented interface.
 %setup -q
 
 %build
-%make -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%_libdir/python%pyver/site-packages/'
+%make -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%py_platsitedir/'
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall_std -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%_libdir/python%pyver/site-packages/'
+%makeinstall_std -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%py_platsitedir/'
 
 
 %clean
