@@ -1,9 +1,10 @@
 Summary: A python module for working with utmp
 Name: python-utmp
-Version: 0.7
-Release: %mkrel 9
-Source0: %{name}-%{version}.tar.bz2
-License: GPL
+Version: 0.8
+Release: %mkrel 1
+URL: http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
+Source0: http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_%{version}.tar.gz
+License: Copyright only
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
 %py_requires -d
@@ -30,7 +31,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README TODO examples/*
+%doc README COPYING TODO examples/*
 %py_platsitedir/*
-
-
