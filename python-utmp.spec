@@ -22,12 +22,12 @@ of utmpaccess module, providing object oriented interface.
 %make -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%py_platsitedir/'
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std -f Makefile.glibc PYTHONVER=%pyver PYTHONDIR='$(DESTDIR)%py_platsitedir/'
 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
