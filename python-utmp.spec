@@ -1,7 +1,7 @@
 Summary:	A python module for working with utmp
 Name:		python-utmp
 Version:	0.8
-Release:	3
+Release:	4
 Group:		Development/Python
 License:	Copyright only
 Url:		http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
