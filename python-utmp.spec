@@ -6,8 +6,7 @@ URL: http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
 Source0: http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_%{version}.tar.gz
 License: Copyright only
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
-%py_requires -d
+BuildRequires:  python-devel
 
 %description
 This package provides 3 python modules to access utmp and wtmp
