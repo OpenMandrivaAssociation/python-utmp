@@ -6,8 +6,11 @@ Group:		Development/Python
 License:	Copyright only
 Url:		http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
 Source0:	http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_%{version}.tar.gz
-BuildRequires:  python2-devel
 
+#Only  python2 build .Sflo
+BuildRequires:  python2-devel
+Requires:  python(abi) = 2.7
+Provides:  python2-utmp
 
 %description
 This package provides 3 python modules to access utmp and wtmp
