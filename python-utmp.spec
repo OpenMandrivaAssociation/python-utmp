@@ -6,7 +6,8 @@ Group:		Development/Python
 License:	Copyright only
 Url:		http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
 Source0:	http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_%{version}.tar.gz
-BuildRequires:  python-devel
+BuildRequires:  python2-devel
+
 
 %description
 This package provides 3 python modules to access utmp and wtmp
@@ -18,12 +19,12 @@ of utmpaccess module, providing object oriented interface.
 %setup -q
 
 %build
-%make -f Makefile.glibc PYTHONVER=%{py_ver} PYTHONDIR='$(DESTDIR)%{py_platsitedir}/'
+%make -f Makefile.glibc PYTHONVER=%{py2_ver} PYTHONDIR='$(DESTDIR)%{py2_platsitedir}/'
 
 %install
-%makeinstall_std -f Makefile.glibc PYTHONVER=%{py_ver} PYTHONDIR='$(DESTDIR)%{py_platsitedir}/'
+%makeinstall_std -f Makefile.glibc PYTHONVER=%{py2_ver} PYTHONDIR='$(DESTDIR)%{py2_platsitedir}/'
 
 %files
 %doc README COPYING TODO examples/*
-%{py_platsitedir}/*
+%{py2_platsitedir}/*
 
