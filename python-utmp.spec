@@ -1,11 +1,11 @@
 Summary:	A python module for working with utmp
 Name:		python-utmp
-Version:	0.8
-Release:	13
+Version:	0.8.2
+Release:	1
 Group:		Development/Python
 License:	Copyright only
 Url:		http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
-Source0:	http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_%{version}.tar.gz
+Source0:	http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/python-utmp_0.8.2.tar.gz
 
 #Only  python2 build .Sflo
 BuildRequires:  python2-devel
@@ -30,4 +30,3 @@ of utmpaccess module, providing object oriented interface.
 %files
 %doc README COPYING TODO examples/*
 %{py2_platsitedir}/*
-
