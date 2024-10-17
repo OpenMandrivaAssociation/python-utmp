@@ -4,7 +4,7 @@ Version:        0.9
 Release:        2
 Group:          Development/Python
 License:        Copyright only
-Url:            http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
+Url:            https://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
 Source0:        http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/python-utmp_%{version}.orig.tar.gz
 BuildRequires:  python3-devel
 
