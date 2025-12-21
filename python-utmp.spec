@@ -6,6 +6,7 @@ Group:          Development/Python
 License:        Copyright only
 Url:            https://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/
 Source0:        http://kassiopeia.juls.savba.sk/~garabik/software/python-utmp/python-utmp_%{version}.orig.tar.gz
+BuildRequires:	make
 BuildRequires:  python3-devel
 
 %description
